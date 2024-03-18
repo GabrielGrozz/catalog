@@ -19,7 +19,7 @@ namespace Catalog.Controllers
         // o action result é importante para nos dar acesso aos métodos action como notFound, Ok ...
         public ActionResult<IEnumerable<Category>> Get()
         {
-            var categories = _context.categories.ToList();
+            var categories = _context.categories.AsNoTracking().ToList();
             if (categories is null)
             {
                 return NotFound();
@@ -28,10 +28,17 @@ namespace Catalog.Controllers
             return categories;
         }
 
+        [HttpGet("products")]
+        public ActionResult<IEnumerable<Category>> GetWithProducts() 
+        {
+            var categories = _context.categories.AsNoTracking().Include(e => e.Products).ToList();
+            return categories;
+        }
+
         [HttpGet("{id:int}", Name = "getCategory")]
         public ActionResult<Category> GetById(int id)
         {
-            var category = _context.categories.FirstOrDefault(e => e.CategoryId == id);
+            var category = _context.categories.AsNoTracking().FirstOrDefault(e => e.CategoryId == id);
             if(category is null){
                 return NotFound();
             }

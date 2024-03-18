@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Catalog.Models
 {
@@ -34,6 +35,7 @@ namespace Catalog.Models
         public int CategoryId { get; set; }
 
         // Propriedade de navegação
+        [JsonIgnore]
         public Category? Category { get; set; }
     }
 }
