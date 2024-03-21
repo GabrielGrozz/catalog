@@ -17,9 +17,10 @@ namespace Catalog.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public ActionResult<IEnumerable<Product>> Get()
+        [HttpGet("{value:alpha:length(5)}")]
+        public ActionResult<IEnumerable<Product>> Get(string value)
         {
+            var param = value;
             var products = _context.products.AsNoTracking().ToList();
             if(products == null)
             {

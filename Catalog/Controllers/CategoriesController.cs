@@ -49,7 +49,9 @@ namespace Catalog.Controllers
             }
         }
 
-        [HttpGet("{id:int}", Name = "getCategory")]
+        //podemos colocar filtro na nossa rota atraves do atributo
+        //com isso a gente evita de fazer requests desnecessários
+        [HttpGet("{id:int:min(1)}", Name = "getCategory")]
         public ActionResult<Category> GetById(int id)
         {
             try
