@@ -1,7 +1,5 @@
 ﻿using Catalog.Context;
 using Catalog.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,22 +15,24 @@ namespace Catalog.Controllers
             _context = context;
         }
 
-        [HttpGet("{value:alpha:length(5)}")]
-        public ActionResult<IEnumerable<Product>> Get(string value)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Product>>> Get()
         {
-            var param = value;
-            var products = _context.products.AsNoTracking().ToList();
-            if(products == null)
-            {
-                return BadRequest();
-            }
-            return products;
+       
+                var products = await _context.products.AsNoTracking().ToListAsync();
+                if(products == null)
+                {
+                    return BadRequest();
+                }
+                return products;
+            
+
         }
 
         [HttpGet("{id:int}", Name ="getProduct")]
-        public ActionResult<Product> Get(int id)
+        public async Task<ActionResult<Product>> Get(int id)
         {
-            var product = _context.products.AsNoTracking().FirstOrDefault(e => e.ProductId == id);
+            var product = await _context.products.AsNoTracking().FirstOrDefaultAsync(e => e.ProductId == id);
             if(product == null)
             {
                 return BadRequest();
@@ -41,33 +41,33 @@ namespace Catalog.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post(Product product) 
+        public async Task<ActionResult> Post(Product product) 
         {
             if(product == null) 
             {
                 return BadRequest();
             }
             _context.products.Add(product);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return new CreatedAtRouteResult("getProduct", new {id = product.ProductId}, product);
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Product product) 
+        public async Task<ActionResult> Put(int id, Product product) 
         {
             if(product.ProductId != id)
             {
                 return BadRequest();
             }
             _context.Entry(product).State = EntityState.Modified;
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok();
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
             var product = _context.products.FirstOrDefault(e => e.ProductId == id);
             if( product == null )
@@ -76,7 +76,7 @@ namespace Catalog.Controllers
             }
 
             _context.Remove(product);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok();
         }

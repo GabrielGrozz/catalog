@@ -1,6 +1,5 @@
 ﻿using Catalog.Context;
 using Catalog.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,11 +16,11 @@ namespace Catalog.Controllers
 
         [HttpGet]
         // o action result é importante para nos dar acesso aos métodos action como notFound, Ok ...
-        public ActionResult<IEnumerable<Category>> Get()
+        public async Task<ActionResult<IEnumerable<Category>>> Get()
         {
             try
             {
-                var categories = _context.categories.AsNoTracking().ToList();
+                var categories = await _context.categories.AsNoTracking().ToListAsync();
                 if (categories is null)
                 {
                     return NotFound();
@@ -29,113 +28,76 @@ namespace Catalog.Controllers
 
                 return categories;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Erro interno de servido, Aguarde até o sistema voltar");
             }
+
         }
 
         [HttpGet("products")]
-        public ActionResult<IEnumerable<Category>> GetWithProducts()
+        public async Task<ActionResult<IEnumerable<Category>>> GetWithProducts() 
         {
-            try
-            {
-                var categories = _context.categories.AsNoTracking().Include(e => e.Products).ToList();
-                return categories;
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
-            }
+            var categories = await _context.categories.AsNoTracking().Include(e => e.Products).ToListAsync();
+            return categories;
         }
 
-        //podemos colocar filtro na nossa rota atraves do atributo
-        //com isso a gente evita de fazer requests desnecessários
-        [HttpGet("{id:int:min(1)}", Name = "getCategory")]
-        public ActionResult<Category> GetById(int id)
+        [HttpGet("{id:int}", Name = "getCategory")]
+        public async Task<ActionResult<Category>> GetById(int id)
         {
-            try
-            {
-                var category = _context.categories.AsNoTracking().FirstOrDefault(e => e.CategoryId == id);
-                if (category is null)
-                {
-                    return NotFound();
-                }
+            var category = await _context.categories.AsNoTracking().FirstOrDefaultAsync(e => e.CategoryId == id);
+            if(category is null){
+                return NotFound();
+            }
 
-                return category;
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
-            }
+            return category;
         }
 
         [HttpPost]
-        public ActionResult Post(Category category)
+        public async Task<ActionResult> Post(Category category)
         {
-            try
+            //a verificação do modelo(ModelState.IsValid) é feita automaticamente por causa do atributo [ApiController]
+
+            if( category is null)
             {
-
-                //a verificação do modelo(ModelState.IsValid) é feita automaticamente por causa do atributo [ApiController]
-
-                if (category is null)
-                {
-                    return BadRequest("A categoria informada é inválida");
-                }
-
-                _context.categories.Add(category);
-                _context.SaveChanges();
-
-                return new CreatedAtRouteResult("getCategory", new { id = category.CategoryId }, category);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
+                return BadRequest("A categoria informada é inválida");
             }
 
+            _context.categories.Add(category);
+            await _context.SaveChangesAsync();
+
+            return new CreatedAtRouteResult("getCategory", new { id = category.CategoryId }, category);
         }
 
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Category category)
+        //nesse método put nós retornamos um tipo específico, poderiamos retornar tbm um tipo complexo, porém retornar um tipo específico não é muito eficaz
+        public async Task<string> Put(int id, Category category) 
         {
-            try
+            if(category.CategoryId != id)
             {
-                if (category.CategoryId != id)
-                {
-                    return BadRequest("O id informado é inválido");
-                }
-
-                _context.Entry(category).State = EntityState.Modified;
-                _context.SaveChanges();
-
-                return Ok(category);
+                return "invalido" ;
             }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
-            }
+
+            _context.Entry(category).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return "OK!";
         }
 
         [HttpDelete("{id:int}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            try
+            Category category = _context.categories.FirstOrDefault(e => e.CategoryId == id);
+            if(category is null)
             {
-                Category category = _context.categories.FirstOrDefault(e => e.CategoryId == id);
-                if (category is null)
-                {
-                    return NotFound();
-                }
-
-                _context.categories.Remove(category);
-                _context.SaveChanges();
-
-                return Ok("a categoria foi removida com sucesso");
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "erro interno do servidor");
-            }
+
+            _context.categories.Remove(category); 
+            await _context.SaveChangesAsync();
+
+            return Ok("a categoria foi removida com sucesso");
         }
     }
 }
