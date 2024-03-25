@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,14 +25,22 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Program.cs",
               "RelativeDocumentMoniker": "Catalog\\Program.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Program.cs",
               "RelativeToolTip": "Catalog\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T20:21:08.332Z",
               "EditorCaption": ""
@@ -45,31 +53,23 @@
               "RelativeDocumentMoniker": "Catalog\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Catalog\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA9wC4AAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T19:05:47.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\appsettings.json",
               "RelativeDocumentMoniker": "Catalog\\appsettings.json",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\appsettings.json",
               "RelativeToolTip": "Catalog\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-25T19:01:22.628Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },

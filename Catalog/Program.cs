@@ -13,7 +13,6 @@ builder.Services.AddDbContext<AppDbContext>(op =>
     op.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
-
 builder.Services.AddControllers().AddJsonOptions(op =>
 {
     op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
