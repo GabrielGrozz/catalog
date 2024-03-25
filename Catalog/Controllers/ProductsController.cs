@@ -44,7 +44,7 @@ namespace Catalog.Controllers
         public async Task<ActionResult> Post(Product product) 
         {
             if(product == null) 
-            {
+            {   
                 return BadRequest();
             }
             _context.products.Add(product);
