@@ -2,6 +2,7 @@ using Catalog.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
+//variável usada para inicializar e configurar a nossa aplicação.
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,7 +22,7 @@ builder.Services.AddControllers().AddJsonOptions(op =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+//aqui iniciamos a nossa aplicação com base nas informações passadas nos serviços acima.
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +36,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); 
 
 app.Run();

@@ -31,9 +31,24 @@ namespace Catalog.Controllers
 
         }
 
+<<<<<<< HEAD
+        //rota para acessarmos os valores que estão presentes no arquivo de configuração.
+        [HttpGet("readconfigurationarchive")]
+        public string GetConfiguration()
+        {
+            string? value = _configuration["value"];
+            return value;
+        }
+
+
         [HttpGet("{id:int}", Name = "getProduct")]
         public async Task<ActionResult<Product>> Get(int id)
         {
+=======
+        [HttpGet("{id:int}", Name = "getProduct")]
+        public async Task<ActionResult<Product>> Get(int id)
+        {
+>>>>>>> 4c3310bc5e5ecf9b32d7918914cec0307b0e90fa
             var product = await _context.products.AsNoTracking().FirstOrDefaultAsync(e => e.ProductId == id);
             if (product == null)
             {
