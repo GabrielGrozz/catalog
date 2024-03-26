@@ -166,6 +166,26 @@
   },
   {
     "ContainingType": "Catalog.Controllers.ProductsController",
+    "Method": "GetConfiguration",
+    "RelativePath": "api/Products/readconfigurationarchive",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Catalog.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "api/Products/{id}",
     "HttpMethod": "GET",

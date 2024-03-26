@@ -1,4 +1,5 @@
 using Catalog.Context;
+using Catalog.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -30,6 +31,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    //aqui adicionamos o nosso middleware personalizado para tratamento de erros
+    app.ConfigureExceptionHandler();
 }
 
 app.UseHttpsRedirection();
