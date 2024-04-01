@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\filters\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\filters\\apiloggingfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\catalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\catalog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\extensions\\apiexceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\extensions\\apiexceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\extensions\\apiexceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|solutionrelative:catalog\\extensions\\apiexceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF114710-8FE0-4EA0-9809-9786D642CD3F}|Catalog\\Catalog.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\2024\\catalog\\catalog\\catalog\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,32 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 251,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Catalog\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Catalog\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowCgAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T19:25:58.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiExceptionMiddlewareExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
-              "RelativeDocumentMoniker": "Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
-              "RelativeToolTip": "Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAB5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T19:12:08.678Z",
+              "DocumentIndex": 1,
+              "Title": "Catalog",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\Catalog\\Catalog\\Catalog.csproj",
+              "RelativeDocumentMoniker": "Catalog\\Catalog.csproj",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\Catalog\\Catalog\\Catalog.csproj",
+              "RelativeToolTip": "Catalog\\Catalog.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-01T20:39:27.41Z",
               "EditorCaption": ""
             },
             {
@@ -69,19 +64,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ApiLoggingFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\Catalog\\Catalog\\Filters\\ApiLoggingFilter.cs",
+              "RelativeDocumentMoniker": "Catalog\\Filters\\ApiLoggingFilter.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\Catalog\\Catalog\\Filters\\ApiLoggingFilter.cs",
+              "RelativeToolTip": "Catalog\\Filters\\ApiLoggingFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T20:23:12.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Catalog\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Catalog\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T19:25:58.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "Catalog\\Extensions\\ApiExceptionMiddlewareExtensions.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAYAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T19:12:08.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Program.cs",
               "RelativeDocumentMoniker": "Catalog\\Program.cs",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Program.cs",
               "RelativeToolTip": "Catalog\\Program.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABwAAAAnAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAACkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-25T20:21:08.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Catalog\\Controllers\\ProductsController.cs",
@@ -89,12 +122,11 @@
               "RelativeToolTip": "Catalog\\Controllers\\ProductsController.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowDoAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T19:05:47.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T19:05:47.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\2024\\Catalog\\catalog\\Catalog\\appsettings.json",
               "RelativeDocumentMoniker": "Catalog\\appsettings.json",
@@ -102,8 +134,7 @@
               "RelativeToolTip": "Catalog\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-25T19:01:22.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T19:01:22.628Z"
             }
           ]
         },
